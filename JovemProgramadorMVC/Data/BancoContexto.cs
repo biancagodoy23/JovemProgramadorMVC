@@ -1,4 +1,5 @@
-﻿using JovemProgramadorMVC.Models;
+﻿using JovemProgramadorMVC.Data.Mapeamento;
+using JovemProgramadorMVC.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace JovemProgramadorMVC.Data
