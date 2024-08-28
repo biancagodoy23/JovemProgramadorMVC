@@ -2,7 +2,9 @@
 {
     public class Aluno
     {
-        public object Matricula { get; internal set; }
-        public object? Id { get; internal set; }
+        public string Matricula { get;  set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Cpf { get; set; }
     }
 }

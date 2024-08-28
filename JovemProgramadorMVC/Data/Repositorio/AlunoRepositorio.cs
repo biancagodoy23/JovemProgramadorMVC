@@ -13,14 +13,10 @@ namespace JovemProgramadorMVC.Data.Repositorio
             _bancoContexto = bancoContexto;
         }
 
-        public List<Aluno> BuscarAluno()
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Aluno> BuscarAlunos()
         {
             return _bancoContexto.Aluno.ToList();
         }
+
     }
 }
