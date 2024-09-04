@@ -18,5 +18,10 @@ namespace JovemProgramadorMVC.Data.Repositorio
             return _bancoContexto.Aluno.ToList();
         }
 
+        public void InserirAluno(Aluno aluno)
+        {
+            _bancoContexto.Aluno.Add(aluno);
+            _bancoContexto.SaveChanges();
+        }
     }
 }
