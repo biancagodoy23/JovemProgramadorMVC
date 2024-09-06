@@ -38,6 +38,28 @@ namespace primeiroprojetoMVC.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public IActionResult Editar(int id)
+        {
+            var aluno = _alunorepositorio.BuscarId(id);
+            return View(aluno);
+        }
+
+        public IActionResult Editar(Aluno aluno)
+        {
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ExcluirCadastro(int id)
+        {
+            var aluno = _alunorepositorio.BuscarId(id);
+            return View(aluno);
+        }
+
+        public IActionResult Excluir(Aluno aluno)
+        {
+            return RedirectToAction("Index");
+        }
     }
 
 
