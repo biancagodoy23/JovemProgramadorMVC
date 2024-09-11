@@ -1,0 +1,16 @@
+﻿CREATE TABLE Aluno (
+Id INT IDENTITY(1,1) NOT NULL,
+Matricula VARCHAR(30) NOT NULL,
+Nome VARCHAR(40) NOT NULL,
+Cpf VARCHAR(14) NULL
+PRIMARY KEY(Id)
+)
+
+INSERT INTO Aluno (Matricula, Nome, Cpf)
+VALUES('001', 'João Marcos', '116.404.089-83')
+
+INSERT INTO Aluno (Matricula, Nome, Cpf)
+VALUES('002', 'Bianca', '116.404.089-83')
+
+SELECT * FROM Aluno
+

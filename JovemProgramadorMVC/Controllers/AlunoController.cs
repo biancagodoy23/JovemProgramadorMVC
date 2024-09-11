@@ -1,4 +1,5 @@
-﻿using JovemProgramadorMVC.Data.Repositorio.Interface;
+﻿using JovemProgramadorMVC.Data.Repositorio;
+using JovemProgramadorMVC.Data.Repositorio.Interface;
 using JovemProgramadorMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -47,20 +48,16 @@ namespace primeiroprojetoMVC.Controllers
 
         public IActionResult Editar(Aluno aluno)
         {
-            return RedirectToAction("Index");
-        }
-
-        public IActionResult ExcluirCadastro(int id)
-        {
-            var aluno = _alunorepositorio.BuscarId(id);
-            return View(aluno);
+           return RedirectToAction("Index");
         }
 
         public IActionResult Excluir(Aluno aluno)
         {
+            _alunorepositorio.Excluir(aluno);
             return RedirectToAction("Index");
         }
     }
 
-
 }
+
+

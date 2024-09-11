@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JovemProgramadorMVC.Data
 {
-    public class BancoContexto : DbContext
+    public class BancoContextoP : DbContext
     {
-        public BancoContexto(DbContextOptions<BancoContexto> options) : base(options)
+        public BancoContextoP(DbContextOptions<BancoContexto> options) : base(options)
         {
 
         }
@@ -16,8 +16,6 @@ namespace JovemProgramadorMVC.Data
             modelBuilder.ApplyConfiguration(new AlunoMapeamento());
         }
 
-        public DbSet<Aluno> Aluno { get; set; }
+        public DbSet<Professor> Professor { get; set; }
     }
-
 }
-

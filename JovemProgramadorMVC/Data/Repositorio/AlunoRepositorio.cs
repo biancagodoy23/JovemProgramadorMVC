@@ -38,7 +38,7 @@ namespace JovemProgramadorMVC.Data.Repositorio
 
         public void Excluir(Aluno aluno)
         {
-            _bancoContexto.Aluno.Update(aluno);
+            _bancoContexto.Aluno.Remove(aluno);
             _bancoContexto.SaveChanges();
         }
     }
