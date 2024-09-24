@@ -54,7 +54,7 @@ namespace primeiroprojetoMVC.Controllers
         {
             _professorrepositorio.Excluir(professor);
             return RedirectToAction("Index");
-        }
+       }
     }
 
 }

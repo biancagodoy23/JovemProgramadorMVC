@@ -1,0 +1,11 @@
+﻿CREATE TABLE Professor(
+Id INT IDENTITY(1,1) NOT NULL,
+ Registro VARCHAR(40),
+ Nome VARCHAR(20),
+ Cpf VARCHAR(15),
+ Materia VARCHAR(10),
+ Turmas VARCHAR(10),
+ HorariosdeAula DATETIME,
+PRIMARY KEY(Id)
+)
+

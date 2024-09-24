@@ -6,11 +6,5 @@ Cpf VARCHAR(14) NULL
 PRIMARY KEY(Id)
 )
 
-INSERT INTO Aluno (Matricula, Nome, Cpf)
-VALUES('001', 'João Marcos', '116.404.089-83')
-
-INSERT INTO Aluno (Matricula, Nome, Cpf)
-VALUES('002', 'Bianca', '116.404.089-83')
-
-SELECT * FROM Aluno
-
+INSERT INTO Aluno(Matricula, Nome, Cpf)
+VALUES('001', 'Bianca', '116.404.089-83')

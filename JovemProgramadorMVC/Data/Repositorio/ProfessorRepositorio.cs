@@ -40,5 +40,15 @@ namespace JovemProgramadorMVC.Data.Repositorio
             _bancoContexto.Professor.Remove(professor);
             _bancoContexto.SaveChanges();
         }
+
+        public List<Professor> BuscarProfessor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void InserirProfessor(Aluno aluno)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

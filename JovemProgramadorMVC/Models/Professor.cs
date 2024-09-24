@@ -7,9 +7,9 @@
         public string Nome { get; set; }
         public string Cpf { get; set; }
 
-        public string Materia {  get; set; }
+        public string Materia { get; set; }
 
-        public string Turmas {  get; set; }
+        public string Turmas { get; set; }
 
         public DateTime HorariosdeAula { get; set; }
     }
