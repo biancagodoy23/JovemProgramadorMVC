@@ -7,7 +7,7 @@ namespace primeiroprojetoMVC.Controllers
     public class ProfessorController : Controller
 
     {
-        private readonly IAlunoRepositorio _alunorepositorio;
+        private readonly IProfessorRepositorio _professorrepositorio;
 
         public ProfessorController(IProfessorRepositorio professorRepositorio)
         {

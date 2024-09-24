@@ -1,5 +1,4 @@
-﻿using JovemProgramadorMVC.Data.Repositorio;
-using JovemProgramadorMVC.Data.Repositorio.Interface;
+﻿using JovemProgramadorMVC.Data.Repositorio.Interface;
 using JovemProgramadorMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
